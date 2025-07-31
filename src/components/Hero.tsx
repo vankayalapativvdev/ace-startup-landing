@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, ChevronRight } from "lucide-react";
+import { ArrowRight, ChevronRight, Rotate3D } from "lucide-react";
 import React from "react";
 import { motion } from "framer-motion";
 
@@ -15,10 +15,11 @@ const fadeInUpVariants = {
 };
 
 const fadeInUpVariantsButton = {
-  hidden: { opacity: 0, y: 60, filter: "blur(5px)" },
+  hidden: { opacity: 0, y: 60, filter: "blur(5px)", rotate: -5 },
   visible: {
     opacity: 1,
     y: 0,
+    rotate: 0,
     filter: "blur(0px)",
     transition: { duration: 1 },
   },
@@ -28,7 +29,7 @@ export const Hero = () => {
   return (
     <motion.div initial="hidden" animate="visible" variants={fadeInUpVariants}>
       <section className="flex flex-col items-center justify-center text-center py-16">
-        <span className="text-xs flex items-center justify-center gap-1 cursor-pointer text-black bg-gray-400/10 px-4 py-2 rounded-full">
+        <span className="text-xs flex items-center justify-center gap-1 cursor-pointer text-black dark:text-white bg-gray-400/10 px-4 py-2 rounded-full">
           We&#39;ve raised $69M seed funding <ChevronRight size={16} />
         </span>
         <h1 className="text-8xl tracking-wide font-bold mt-6 mb-4">
