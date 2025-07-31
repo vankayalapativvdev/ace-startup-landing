@@ -1,6 +1,19 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 import { ModeToggle } from "./toggle-mode";
+import { motion } from "framer-motion";
+
+const fadeInDownVariants = {
+  hidden: { opacity: 0, y: -30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+
+    transition: { duration: 0.8 },
+  },
+};
 
 export const Navbar = () => {
   const NavLinks = [
@@ -19,7 +32,11 @@ export const Navbar = () => {
   ];
 
   return (
-    <div>
+    <motion.div
+      initial="hidden"
+      animate="visible"
+      variants={fadeInDownVariants}
+    >
       <nav className="flex flex-row items-center space-x-16 justify-start">
         <div className="flex items-center space-x-1">
           <Image src="/logo.webp" alt="Logo" width={25} height={25} />
@@ -46,6 +63,6 @@ export const Navbar = () => {
           </div>
         </div>
       </nav>
-    </div>
+    </motion.div>
   );
 };

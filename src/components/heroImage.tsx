@@ -10,7 +10,7 @@ export const HeroImage = () => {
           alt="Product Image"
           width={1500}
           height={1000}
-          className="border-1 border-gray-300 bg-white rounded-2xl p-2 object-cover [mask-image:linear-gradient(to_bottom,black_90%,transparent)]"
+          className="border-1 border-gray-300 bg-white object-top-left rounded-2xl p-2 object-cover [mask-image:linear-gradient(to_bottom,black_90%,transparent)]"
         />
       </div>
     </section>
