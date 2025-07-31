@@ -1,5 +1,5 @@
+import { Companies } from "@/components/Companies";
 import { Hero } from "@/components/Hero";
-import { HeroImage } from "@/components/heroImage";
 import { Navbar } from "@/components/Navbar";
 
 export default function Home() {
@@ -8,7 +8,7 @@ export default function Home() {
       <section className="max-w-7xl mx-auto px-8 py-6">
         <Navbar />
         <Hero />
-        <HeroImage />
+        <Companies />
       </section>
     </>
   );

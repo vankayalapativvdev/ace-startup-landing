@@ -44,7 +44,7 @@ export const Navbar = () => {
         </div>
         <div className=" flex items-center justify-between w-full">
           <div>
-            <ul className="flex space-x-10 text-sm text-gray-700 dark:text-slate-200 font-medium">
+            <ul className="flex space-x-10 text-sm text-gray-700/60 dark:text-slate-200 font-medium">
               {NavLinks.map((link) => (
                 <li key={link.name}>
                   <a href={link.href}>{link.name}</a>
