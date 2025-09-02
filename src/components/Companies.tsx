@@ -32,12 +32,6 @@ export const Companies = () => {
             width={150}
             height={100}
           />
-          <Image
-            src={"/onlyfans.webp"}
-            alt="Google Logo"
-            width={150}
-            height={100}
-          />
         </div>
       </section>
     </div>
